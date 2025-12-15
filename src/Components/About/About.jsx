@@ -36,43 +36,43 @@ const About = () => {
                 </div>
                 <div className="skills-part">
                     <div className="skill">
-                        <FaHtml5 size={80} />
+                        <FaHtml5 size={70} />
                         <span>HTML</span>
                     </div>
                     <div className="skill">
-                        <FaCss3Alt size={80} />
+                        <FaCss3Alt size={70} />
                         <span>CSS</span>
                     </div>
                     <div className="skill">
-                        <FaJsSquare size={80} />
+                        <FaJsSquare size={70} />
                         <span>JavaScript</span>
                     </div>
                     <div className="skill">
-                        <FaReact size={80} />
+                        <FaReact size={70} />
                         <span>React</span>
                     </div>
                     <div className="skill">
-                        <FaNode size={80} />
+                        <FaNode size={70} />
                         <span>Node.js</span>
                     </div>
                     <div className="skill">
-                        <SiExpress size={80} />
+                        <SiExpress size={70} />
                         <span>Express.js</span>
                     </div>
                     <div className="skill">
-                        <SiMongodb size={80} />
+                        <SiMongodb size={70} />
                         <span>MongoDB</span>
                     </div>
                     <div className="skill">
-                        <FaBootstrap size={80} />
+                        <FaBootstrap size={70} />
                         <span>Bootstrap</span>
                     </div>
                     <div className="skill">
-                        <SiTailwindcss size={80} />
+                        <SiTailwindcss size={70} />
                         <span>Tailwind</span>
                     </div>
                     <div className="skill">
-                        <SiRedux size={80} />
+                        <SiRedux size={70} />
                         <span>Redux</span>
                     </div>
                 </div>

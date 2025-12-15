@@ -1,14 +1,17 @@
-.about{
+/* ---------- About Section ---------- */
+.about {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:80px;
+    gap: 80px;
     margin: 80px 170px;
 }
-.title-box{
-        position: relative;
+
+.title-box {
+    position: relative;
 }
+
 .title-box h1 {
     padding: 0px 30px;
     font-size: 60px;
@@ -21,24 +24,26 @@
     right: 0;
     z-index: -1;
 }
-.about-sections{
+
+/* ---------- Desktop: image on left, text on right ---------- */
+.about-sections {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 70px;
 }
-.about-left img{
+
+.about-left img {
     width: 360px;
     border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
 }
-.about-right{
+
+.about-right {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    flex: 1; /* ياخد باقي المساحة */
 }
+
 .about-para {
     display: flex;
     flex-direction: column;
@@ -47,39 +52,31 @@
     font-weight: 600;
     line-height: 40px;
 }
-.about-para p span{
+
+.about-para p span {
     background: linear-gradient(270deg,#DF8908 10%,rgb(180, 21, 255) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 800;
 }
+
 .skills-part {
     display: flex;
     flex-wrap: wrap;
-    gap:50px;
+    gap: 80px;
     justify-content: center;
     margin-top: 20px;
 }
-
-.skill {
+.skill{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-weight: 500;
-    font-size: 16px;
-    color:white;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
-}
-.skill svg {
-    fill: #686668;
-}
-.skill span {
-    text-align: center;
 }
 .skill:hover{
     transform: scale(1.05);
@@ -88,17 +85,45 @@
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
 }
-.skill svg:hover {
-    fill: #d265c3;
+.skill:hover svg {
+    fill: rgb(239, 107, 223);
 }
+/* ---------- Responsive: Tablet ---------- */
+@media (max-width: 1024px) {
+    .about {
+        margin: 50px 50px;
+        gap: 60px;
+    }
+    .about-left {
+        display: none; /* تختفي على tablets و mobile */
+    }
+    .title-box h1 {
+        font-size: 50px;
+    }
+
+    .title-box img {
+        width: 150px;
+    }
+
+    .about-sections {
+        gap: 50px;
+    }
+
+    .about-para {
+        font-size: 20px;
+        line-height: 36px;
+    }
+}
+
+/* ---------- Responsive: Mobile ---------- */
 @media (max-width: 768px) {
     .about {
         gap: 50px;
-        margin: 50px 6%; 
-        align-items: start; 
+        margin: 50px 6%;
+        align-items: flex-start;
     }
 
-    .title-box h1 { 
+    .title-box h1 {
         font-size: 40px;
         padding: 0;
     }
@@ -107,15 +132,43 @@
         width: 130px;
         right: -20px;
     }
-    .about-sections{
+
+    /* هنا الصورة تتحول فوق النص على الموبايل */
+    .about-sections {
         flex-direction: column;
+        gap: 30px;
     }
-    .about-left{
-        display: none;
+
+    .about-left {
+        display: none; /* لو عايز تخفي الصورة على الموبايل ممكن تضيف display: none */
     }
-    .about-para{
+
+    .about-right {
+        width: 100%;
+    }
+
+    .about-para {
         font-size: 17px;
         line-height: 32px;
     }
 
+    .skills-part {
+        gap: 30px;
+    }
+}
+
+/* ---------- Extra Small Screens ---------- */
+@media (max-width: 480px) {
+    .title-box h1 {
+        font-size: 32px;
+    }
+
+    .about-para {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .skills-part {
+        gap: 20px;
+    }
 }
