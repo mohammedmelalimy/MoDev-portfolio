@@ -15,7 +15,11 @@ const Hero = () => {
                             Contact with me
                         </AnchorLink>
                     </div>
-                    <div className="hero-resume">My Resume</div>
+                <a
+                    href="/public/cv.pdf"
+                    download="cv.pdf"
+                    className="hero-resume"
+                    >My Resume</a>
                 </div>
             </div>
         </div>
@@ -23,4 +27,3 @@ const Hero = () => {
     }
 
 export default Hero
-// Connect with me
