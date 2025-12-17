@@ -1,43 +1,38 @@
-import React from 'react'
-import './Footer.css'
-import Logo from '../../assets/logo.svg'
-import user from '../../assets/user.svg'
-const Footer = () => {
+    import React from 'react'
+    import './Footer.css'
+    import Logo from '../../assets/logo.svg'
+
+    const Footer = () => {
     return (
-        <div class="footer">
-            <div class="footer-top">
-                <div class="footer-top-left">
-                    <img src={Logo} alt='logo' class="footer-logo" />
-                    <p>
-                        I am a frontend developer passionate about building modern and
-                        user-friendly web experiences.
-                    </p>
-                </div>
-                <div class="footer-top-right">
-                    <div class="footer-email-input">
-                        <img src={user} alt='user' class="email-icon" />
-                        <input
-                        type="email"
-                        placeholder="Enter your email"
-                        />
-                    </div>
-                    <button class="footer-subscribe">Subscribe</button>
-                </div>
+        <div className="footer">
+        <div className="footer-top">
+            <div className="footer-top-left">
+            <img src={Logo} alt='logo' className="footer-logo" />
+            <p>
+                I am a frontend developer passionate about building modern and
+                user-friendly web experiences.
+            </p>
             </div>
-            <hr />
-            <div class="footer-bottom">
-                <p class="footer-bottom-left">
-                    © 2025 Mohammed Elalimy. All rights reserved.
-                </p>
-                <div class="footer-bottom-right">
-                    <p>Terms of Service</p>
-                    <p>Privacy Policy</p>
-                    <p>Connect with me</p>
-                </div>
+            <div className="footer-top-right">
+            <a href="https://www.facebook.com/profile.php?id=100040613604023" target="_blank" rel="noopener noreferrer">
+                <i className="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://github.com/mohammedmelalimy" target="_blank" rel="noopener noreferrer">
+                <i className="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mohammed-elalimy-aa2556287" target="_blank" rel="noopener noreferrer">
+                <i className="fa-brands fa-linkedin"></i>
+            </a>
             </div>
         </div>
+        <hr />
+        <div className="footer-bottom">
+            <p className="footer-bottom-left">
+            © 2025 Mohammed Elalimy. All rights reserved.
+            </p>
+        </div>
+        </div>
+    )
+    }
 
-)
-}
-
-export default Footer
+    export default Footer
