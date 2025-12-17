@@ -1,5 +1,5 @@
     import React, { useState, useEffect } from "react";
-    import './ScrollUp.css';
+    import './Scrollup.css';
 
     const ScrollUp = () => {
     const [visible, setVisible] = useState(false);
