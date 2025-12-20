@@ -8,15 +8,17 @@ import Footer from './Components/Footer/Footer'
 import Scrollup from './Components/Scrollup/Scrollup'
 const App = () => {
   return (
-    <div>
-      <Navbar/>
-      <Hero/>
-      <About />
-      <Work />
-      <Contact />
-      <Footer />
-      <Scrollup/>
-    </div>
+      <>
+        <div className='layout'>
+          <Navbar/>
+          <Hero/>
+          <About />
+          <Work />
+          <Contact />
+          <Footer />
+          <Scrollup/>
+        </div>
+      </> 
   )
 }
 
