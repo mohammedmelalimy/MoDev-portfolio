@@ -10,16 +10,14 @@ const Hero = () => {
                 <h1> <span>I'm Mohamed Elalimy | </span>Frontend Developer based in Tanta</h1>
                 <p>Eager to learn new technologies and contribute to real-world projects. </p>
                 <div className="hero-action">
-                    <div className="hero-connect">
-                        <AnchorLink className='anchor-link' offset={50} href='#contact'>
-                            Contact with me
-                        </AnchorLink>
-                    </div>
-                <a
-                    href="/public/cv.pdf"
-                    download="cv.pdf"
-                    className="hero-resume"
-                    >My Resume</a>
+                    <AnchorLink className='hero-connect' offset={50} href='#contact'>
+                        Contact with me
+                    </AnchorLink>
+                    <a
+                        href="/public/cv.pdf"
+                        download="cv.pdf"
+                        className="hero-resume"
+                        >My Resume</a>
                 </div>
             </div>
         </div>

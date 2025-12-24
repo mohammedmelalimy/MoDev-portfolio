@@ -24,40 +24,38 @@ const Navbar = () => {
 
             <ul ref={menuRef} className="nav-menu">
                 <img src={closed} alt='closed' className='nav-mob-closed' onClick={closeMenu}/>
-            <li>
-            <AnchorLink className="anchor-link">
-                <p onClick={() => {setMenu('home'); closeMenu();}}>Menu</p>
-            </AnchorLink>
-                {menu === 'home' && <img src={underlined} alt="" />}
-            </li>
-
-            <li>
-            <AnchorLink className='anchor-link' offset={50} href='#about'>
-                        <p onClick={() => { setMenu('about'); closeMenu(); }}>About Me</p>
-            </AnchorLink>
-            {menu === 'about' && <img src={underlined} alt="" />}
-            </li>
-
-            <li>
-            <AnchorLink className='anchor-link' offset={50} href='#work'>
-                <p onClick={() => { setMenu('work'); closeMenu(); }}>Projects</p>
-            </AnchorLink>
-            {menu === 'work' && <img src={underlined} alt="" />}
-            </li>
-
-            <li>
-            <AnchorLink className='anchor-link' offset={50} href='#contact'>
-                <p onClick={() => { setMenu('contact'); closeMenu(); }}>Contact</p>
-            </AnchorLink>
-            {menu === 'contact' && <img src={underlined} alt="" />}
-            </li>
-        </ul>
-
-            <div className="nav-connect">
-                <AnchorLink className='anchor-link' offset={50} href='#contact'>
-                    <p onClick={() => setMenu('contact')}>Connect With Me</p>
+                <li>
+                <AnchorLink className="anchor-link">
+                    <p onClick={() => {setMenu('home'); closeMenu();}}>Menu</p>
                 </AnchorLink>
-            </div>
+                    {menu === 'home' && <img src={underlined} alt="" />}
+                </li>
+
+                <li>
+                <AnchorLink className='anchor-link' offset={50} href='#about'>
+                            <p onClick={() => { setMenu('about'); closeMenu(); }}>About Me</p>
+                </AnchorLink>
+                {menu === 'about' && <img src={underlined} alt="" />}
+                </li>
+
+                <li>
+                <AnchorLink className='anchor-link' offset={50} href='#work'>
+                    <p onClick={() => { setMenu('work'); closeMenu(); }}>Projects</p>
+                </AnchorLink>
+                {menu === 'work' && <img src={underlined} alt="" />}
+                </li>
+
+                <li>
+                <AnchorLink className='anchor-link' offset={50} href='#contact'>
+                    <p onClick={() => { setMenu('contact'); closeMenu(); }}>Contact</p>
+                </AnchorLink>
+                {menu === 'contact' && <img src={underlined} alt="" />}
+                </li>
+            </ul>
+
+            <AnchorLink className='nav-connect' offset={50} href='#contact'>
+                <p onClick={() => setMenu('contact')}>Connect With Me</p>
+            </AnchorLink>
         </div>
     )
 }

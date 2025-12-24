@@ -51,6 +51,8 @@
     background: linear-gradient(270deg, #DF8908 10%, rgb(180, 21, 255) 100%);
     cursor: pointer;
     transition: 0.5s;
+    text-decoration: none;
+    color: white;
 }
 
 .hero-action .hero-connect:hover {
