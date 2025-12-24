@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef } from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo.svg'
 import underlined from '../../assets/underlined.svg'
@@ -6,8 +6,7 @@ import toggle from '../../assets/toggle.svg'
 import closed from '../../assets/closed.svg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
-const Navbar = () => {
-    const [menu, setMenu] = useState('home')
+const Navbar = ({ activeSection, setActiveSection }) => {
     const menuRef = useRef();
 
     const openMenu = () => {
@@ -17,47 +16,50 @@ const Navbar = () => {
     const closeMenu = () => {
         menuRef.current.style.right = "-500px"; 
     };
+
     return (
         <div className="navbar">
-        <img src={logo} alt="logo" />
-        <img src={toggle} alt="toggle" className='nav-mob-open' onClick={openMenu} />
+            <img src={logo} alt="logo" />
+            <img src={toggle} alt="toggle" className='nav-mob-open' onClick={openMenu} />
 
             <ul ref={menuRef} className="nav-menu">
                 <img src={closed} alt='closed' className='nav-mob-closed' onClick={closeMenu}/>
+                
                 <li>
-                <AnchorLink className="anchor-link">
-                    <p onClick={() => {setMenu('home'); closeMenu();}}>Menu</p>
-                </AnchorLink>
-                    {menu === 'home' && <img src={underlined} alt="" />}
+                    <AnchorLink className="anchor-link" offset={50} href=''>
+                        <p onClick={() => { setActiveSection('home'); closeMenu(); }}>Menu</p>
+                    </AnchorLink>
+                    {activeSection === 'home' && <img src={underlined} alt="" />}
                 </li>
 
                 <li>
-                <AnchorLink className='anchor-link' offset={50} href='#about'>
-                            <p onClick={() => { setMenu('about'); closeMenu(); }}>About Me</p>
-                </AnchorLink>
-                {menu === 'about' && <img src={underlined} alt="" />}
+                    <AnchorLink className='anchor-link' offset={50} href='#about'>
+                        <p onClick={() => { setActiveSection('about'); closeMenu(); }}>About Me</p>
+                    </AnchorLink>
+                    {activeSection === 'about' && <img src={underlined} alt="" />}
                 </li>
 
                 <li>
-                <AnchorLink className='anchor-link' offset={50} href='#work'>
-                    <p onClick={() => { setMenu('work'); closeMenu(); }}>Projects</p>
-                </AnchorLink>
-                {menu === 'work' && <img src={underlined} alt="" />}
+                    <AnchorLink className='anchor-link' offset={50} href='#work'>
+                        <p onClick={() => { setActiveSection('work'); closeMenu(); }}>Projects</p>
+                    </AnchorLink>
+                    {activeSection === 'work' && <img src={underlined} alt="" />}
                 </li>
 
                 <li>
-                <AnchorLink className='anchor-link' offset={50} href='#contact'>
-                    <p onClick={() => { setMenu('contact'); closeMenu(); }}>Contact</p>
-                </AnchorLink>
-                {menu === 'contact' && <img src={underlined} alt="" />}
+                    <AnchorLink className='anchor-link' offset={50} href='#contact'>
+                        <p onClick={() => { setActiveSection('contact'); closeMenu(); }}>Contact</p>
+                    </AnchorLink>
+                    {activeSection === 'contact' && <img src={underlined} alt="" />}
                 </li>
             </ul>
 
             <AnchorLink className='nav-connect' offset={50} href='#contact'>
-                <p onClick={() => setMenu('contact')}>Connect With Me</p>
+                <p onClick={() => setActiveSection('contact')}>Connect With Me</p>
             </AnchorLink>
         </div>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;
+

@@ -1,7 +1,7 @@
     import React, { useState, useEffect } from "react";
     import './Scrollup.css';
 
-    const ScrollUp = () => {
+    const ScrollUp = ({setActiveSection }) => {
     const [visible, setVisible] = useState(false);
 
     const toggleVisible = () => {
@@ -13,10 +13,8 @@
     };
 
     const scrollToTop = () => {
-        window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-        });
+    setActiveSection('home');
+    window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
     useEffect(() => {
