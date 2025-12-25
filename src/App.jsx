@@ -5,7 +5,7 @@ import About from './Components/About/About';
 import Work from './Components/Work/Work';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
-import ScrollUp from './Components/Scroll-up/Scroll-up';
+import ScrollUp from './Components/Scroll-Up/ScrollUp';
 
 const sections = ['home', 'about', 'work', 'contact'];
 
