@@ -2,7 +2,8 @@
     import './Footer.css'
     import Logo from '../../assets/logo.svg'
 
-    const Footer = () => {
+const Footer = () => {
+    const currentYear = new Date().getFullYear();
     return (
         <div className="footer">
         <div className="footer-top">
@@ -31,7 +32,7 @@
         <hr />
         <div className="footer-bottom">
             <p className="footer-bottom-left">
-            © 2025 Mohammed Elalimy. All rights reserved.
+            © {currentYear} Mohammed Elalimy. All rights reserved.
             </p>
         </div>
         </div>
