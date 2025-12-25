@@ -14,15 +14,18 @@
             </p>
             </div>
             <div className="footer-top-right">
-            <a href="https://www.facebook.com/profile.php?id=100040613604023" target="_blank" rel="noopener noreferrer">
-                <i className="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="https://github.com/mohammedmelalimy" target="_blank" rel="noopener noreferrer">
-                <i className="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/mohammed-elalimy-aa2556287" target="_blank" rel="noopener noreferrer">
-                <i className="fa-brands fa-linkedin"></i>
-            </a>
+                <a href="https://www.facebook.com/profile.php?id=100040613604023" target="_blank" rel="noopener noreferrer">
+                    <i className="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://github.com/mohammedmelalimy" target="_blank" rel="noopener noreferrer">
+                    <i className="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mohammed-elalimy-aa2556287" target="_blank" rel="noopener noreferrer">
+                    <i className="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://wa.me/201113414805" target="_blank" rel="noopener noreferrer">
+                    <i className="fa-brands fa-whatsapp"></i>
+                </a>
             </div>
         </div>
         <hr />
