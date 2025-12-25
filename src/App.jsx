@@ -1,26 +1,48 @@
-import React, { useState } from 'react'
-import Navbar from './Components/Navbar/Navbar'
-import Hero from './Components/Hero/Hero'
-import About from './Components/About/About'
-import Work from './Components/Work/Work'
-import Contact from './Components/Contact/Contact'
-import Footer from './Components/Footer/Footer'
-import Scrollup from './Components/Scrollup/Scrollup'
+import React, { useState, useEffect } from 'react';
+import Navbar from './Components/Navbar/Navbar';
+import Hero from './Components/Hero/Hero';
+import About from './Components/About/About';
+import Work from './Components/Work/Work';
+import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
+import ScrollUp from './Components/Scroll-up/Scroll-up';
+
+const sections = ['home', 'about', 'work', 'contact'];
+
 const App = () => {
   const [activeSection, setActiveSection] = useState('home');
-  return (
-      <>
-        <div className='layout'>
-          <Navbar activeSection={activeSection} setActiveSection={setActiveSection} />
-          <Hero/>
-          <About />
-          <Work />
-          <Contact />
-          <Footer />
-          <Scrollup setActiveSection={setActiveSection} />
-        </div>
-      </> 
-  )
-}
 
-export default App
+  // Scroll listener لتحديد القسم النشط تلقائيًا
+  useEffect(() => {
+    const handleScroll = () => {
+      let current = 'home';
+      sections.forEach(section => {
+        const element = document.getElementById(section);
+        if (element) {
+          const top = element.offsetTop - 60; // تعديل حسب ارتفاع Navbar
+          if (window.scrollY >= top) {
+            current = section;
+          }
+        }
+      });
+      setActiveSection(current);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    <>
+      <Navbar activeSection={activeSection} setActiveSection={setActiveSection} />
+      <section id="home"><Hero /></section>
+      <section id="about"><About /></section>
+      <section id="work"><Work /></section>
+      <section id="contact"><Contact /></section>
+      <Footer />
+      <ScrollUp setActiveSection={setActiveSection} />
+    </>
+  );
+};
+
+export default App;

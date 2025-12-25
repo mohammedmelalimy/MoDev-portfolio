@@ -26,28 +26,28 @@ const Navbar = ({ activeSection, setActiveSection }) => {
                 <img src={closed} alt='closed' className='nav-mob-closed' onClick={closeMenu}/>
                 
                 <li>
-                    <AnchorLink className="anchor-link" offset={50} href=''>
+                    <AnchorLink className="anchor-link" offset={50} href='' data-to-scrollspy-id="home">
                         <p onClick={() => { setActiveSection('home'); closeMenu(); }}>Menu</p>
                     </AnchorLink>
                     {activeSection === 'home' && <img src={underlined} alt="" />}
                 </li>
 
                 <li>
-                    <AnchorLink className='anchor-link' offset={50} href='#about'>
+                    <AnchorLink className='anchor-link' offset={50} href='#about' data-to-scrollspy-id="about">
                         <p onClick={() => { setActiveSection('about'); closeMenu(); }}>About Me</p>
                     </AnchorLink>
                     {activeSection === 'about' && <img src={underlined} alt="" />}
                 </li>
 
                 <li>
-                    <AnchorLink className='anchor-link' offset={50} href='#work'>
+                    <AnchorLink className='anchor-link' offset={50} href='#work' data-to-scrollspy-id="work">
                         <p onClick={() => { setActiveSection('work'); closeMenu(); }}>Projects</p>
                     </AnchorLink>
                     {activeSection === 'work' && <img src={underlined} alt="" />}
                 </li>
 
                 <li>
-                    <AnchorLink className='anchor-link' offset={50} href='#contact'>
+                    <AnchorLink className='anchor-link' offset={50} href='#contact' data-to-scrollspy-id="contact">
                         <p onClick={() => { setActiveSection('contact'); closeMenu(); }}>Contact</p>
                     </AnchorLink>
                     {activeSection === 'contact' && <img src={underlined} alt="" />}
