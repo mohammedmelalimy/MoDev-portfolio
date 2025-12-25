@@ -5,7 +5,26 @@
     justify-content: space-between;
     margin: 20px 170px;
 }
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
 
+.logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.logo p {
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+    letter-spacing: 1px;
+}
 .nav-menu {
     list-style: none;
     display: flex;
@@ -14,6 +33,7 @@
     font-size: 16px; 
     font-weight: 500;
 }
+
 
 .nav-connect {
     padding: 15px 27px;

@@ -19,7 +19,10 @@ const Navbar = ({ activeSection, setActiveSection }) => {
 
     return (
         <div className="navbar">
-            <img src={logo} alt="logo" />
+            <div className='logo'>
+                <img src={logo} alt="logo" />
+                <p>Elalimy</p>
+            </div>
             <img src={toggle} alt="toggle" className='nav-mob-open' onClick={openMenu} />
 
             <ul ref={menuRef} className="nav-menu">
