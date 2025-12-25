@@ -82,21 +82,13 @@
     .footer-bottom {
         flex-direction: column-reverse;
         gap: 15px;
+        font-size: 13px;
     }
 
     .footer-top-right {
         gap: 15px;
     }
 
-    .footer-email-input {
-        width: 93%;
-        padding: 12px 20px;
-    }
-
-    .footer-subscribe {
-        width: 100%;
-        text-align: center;
-    }
 }
 
 /* ---------- Responsive: Extra Small Screens ---------- */
