@@ -60,7 +60,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <form onSubmit={onSubmit}class="contact-right">
+                <form onSubmit={onSubmit}className="contact-right">
                     <input type="hidden" name="subject" value="New Submission from Portfolio" />
                     <label>Your Name</label>
                     <input
@@ -84,11 +84,11 @@ const Contact = () => {
                         required
                     ></textarea>
                     <div
-                        class="h-captcha"
+                        className="h-captcha"
                         data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
                     ></div>
 
-                    <button type="submit" class="contact-submit">
+                    <button type="submit" className="contact-submit">
                         Submit now
                     </button>
                 </form>
