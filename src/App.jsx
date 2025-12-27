@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import Navbar from './Components/Navbar/Navbar';
-import Hero from './Components/Hero/Hero';
+import { useEffect, useState } from 'react';
 import About from './Components/About/About';
-import Work from './Components/Work/Work';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
+import Hero from './Components/Hero/Hero';
+import Navbar from './Components/Navbar/Navbar';
 import ScrollUp from './Components/Scroll-Up/ScrollUp';
-import EffectsBackground from './Components/EffectsBackground/EffectsBackground';
 
 const sections = ['home', 'about', 'work', 'contact'];
 
@@ -35,7 +33,7 @@ const App = () => {
   return (
     <>
 
-      <EffectsBackground />
+      {/* <EffectsBackground /> */}
       <Navbar activeSection={activeSection} setActiveSection={setActiveSection} />
       <section id="home"><Hero /></section>
       <section id="about"><About /></section>

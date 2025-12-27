@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import './EffectsBackground.css'
+import './EffectsBackground.css';
 const EffectsBackground = () => {
 
 const particlesInit = useCallback(async (engine) => {
@@ -10,27 +10,29 @@ const particlesInit = useCallback(async (engine) => {
 
 return (
     <Particles
-    id="tsparticles"
-    init={particlesInit}
-    options={{
+      id="tsparticles"
+      init={particlesInit}
+      options={{
         fullScreen: { enable: true, zIndex: -1 },
-        shape: { type: "triangle" },
-        background: { color: "transparent" }, 
+        background: { color: "transparent" },
+        fpsLimit: 60,
         particles: {
-        number: { value: 120 },
-        size: { value: 2, random: true },
-        color: { value: "#834673ff" },
-        move: { enable: true, speed: 0.5, out_mode: "out" },
-        interactivity: {
-            events: {
-            onHover: { enable: true, mode: "grab" },
-            onclick: { enable: false },
-            },
-            modes: { grab: { distance: 400, line_linked: { opacity: 1 } } },
+          number: { value: 120, density: { enable: true, area: 800 } },
+          color: { value: ["#ffffff", "#DA7C25", "#B923E1"] },
+          shape: { type: ["circle", "star", "triangle"] },
+          opacity: { value: 0.8, random: true },
+          size: { value: 2, random: true },
+          move: {
+            enable: true,
+            speed: 0.3,
+            direction: "none",
+            random: true,
+            straight: false,
+            outModes: "out"
+          }
         },
-        retina_detect: true,
-        },
-    }}
+        detectRetina: true
+      }}
     />
 
     );
