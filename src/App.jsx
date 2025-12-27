@@ -39,7 +39,7 @@ const App = () => {
       <Navbar activeSection={activeSection} setActiveSection={setActiveSection} />
       <section id="home"><Hero /></section>
       <section id="about"><About /></section>
-      <section id="work"><Work /></section>
+      {/* <section id="work"><Work /></section> */}
       <section id="contact"><Contact /></section>
       <Footer />
       <ScrollUp setActiveSection={setActiveSection} />

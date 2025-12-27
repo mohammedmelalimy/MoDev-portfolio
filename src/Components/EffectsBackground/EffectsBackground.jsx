@@ -19,7 +19,7 @@ return (
         particles: {
         number: { value: 120 },
         size: { value: 2, random: true },
-        color: { value: "#6a5163ff" },
+        color: { value: "#834673ff" },
         move: { enable: true, speed: 0.5, out_mode: "out" },
         interactivity: {
             events: {
