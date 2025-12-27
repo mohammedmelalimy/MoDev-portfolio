@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
 import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
+import EffectsBackground from './Components/EffectsBackground/EffectsBackground';
 import Footer from './Components/Footer/Footer';
 import Hero from './Components/Hero/Hero';
 import Navbar from './Components/Navbar/Navbar';
+import Projects from './Components/Projects/Projects';
 import ScrollUp from './Components/Scroll-Up/ScrollUp';
-
-const sections = ['home', 'about', 'work', 'contact'];
+const sections = ['home', 'about', 'projects', 'contact'];
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -33,11 +34,11 @@ const App = () => {
   return (
     <>
 
-      {/* <EffectsBackground /> */}
+      <EffectsBackground />
       <Navbar activeSection={activeSection} setActiveSection={setActiveSection} />
       <section id="home"><Hero /></section>
       <section id="about"><About /></section>
-      {/* <section id="work"><Work /></section> */}
+      <section id="projects"><Projects /></section>
       <section id="contact"><Contact /></section>
       <Footer />
       <ScrollUp setActiveSection={setActiveSection} />

@@ -1,0 +1,174 @@
+/* ================== Projects Section ================== */
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 10%;
+}
+
+/* ---------- Title ---------- */
+.title {
+  position: relative;
+}
+
+.title h1 {
+  padding: 0 30px;
+  font-size: 60px;
+  font-weight: 600;
+  position: relative;
+  z-index: 2;
+}
+
+.title img {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+}
+
+/* ================== Projects Container ================== */
+.projects-container {
+  display: flex;
+  gap: 24px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* ---------- Side Menu ---------- */
+.side {
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.side button {
+  border: none;
+  background: none;
+  color: #eee;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 12px;
+  text-align: left;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.side button:hover {
+  background-color: #353535;
+  transform: translateX(4px);
+}
+
+.side button.active {
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  color: #fff;
+}
+
+/* ---------- Projects Card Grid ---------- */
+.projects-card {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+.show-more-projects {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 30px;
+    font-size: 22px;
+    font-weight: 500;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #171717;
+    color: #ffffff;
+    outline: none;
+    border: none;
+}
+
+.show-more-projects:hover {
+  opacity: 0.5;
+  gap: 30px;
+  transform: scale(1.05);
+}
+
+/* ================== Responsive ================== */
+
+/* -------- Desktop / Laptop ---------- */
+@media (max-width: 1024px) {
+  .projects-section {
+    margin: 60px 6%;
+    gap: 60px;
+  }
+
+  .title h1 {
+    font-size: 48px;
+  }
+
+  .projects-container {
+    gap: 16px;
+  }
+
+  .side {
+    min-width: 140px;
+  }
+
+  .projects-card {
+    gap: 16px;
+  }
+}
+
+/* -------- Tablet ---------- */
+@media (max-width: 768px) {
+  .projects-section {
+    gap: 50px;
+    align-items: flex-start;
+  }
+
+  .title h1 {
+    font-size: 40px;
+    padding: 0;
+  }
+
+  .title img {
+    width: 130px;
+    right: -20px;
+  }
+
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .side {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .side button {
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}
+
+/* -------- Small Mobile ---------- */
+@media (max-width: 480px) {
+  .title h1 {
+    font-size: 32px;
+  }
+
+  .side button {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+
+  .projects-card {
+    gap: 12px;
+  }
+}

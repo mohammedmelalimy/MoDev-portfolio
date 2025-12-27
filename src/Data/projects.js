@@ -1,0 +1,84 @@
+
+import AutoHubImg from '../Data/Auto Hub.jpg';
+import BlogsImg from '../Data/Blogs.jpg';
+import ElectronicsImg from '../Data/Electronics.jpg';
+import FreshCartImg from '../Data/FreshCart.jpg';
+import LeonImg from '../Data/Leon.jpg';
+import PSImg from '../Data/PS.jpg';
+import WatchesImg from '../Data/Watches.jpg';
+
+const projects = [
+  {
+    id: 1,
+    name: 'Ecommerce Website',
+    category: 'react',
+    img: FreshCartImg,
+    tools: ['React', 'TypeScript', 'Tailwind', 'Redux Toolkit'],
+    description: 'An e-commerce platform built with React, featuring shopping cart, product listing, and Redux state management.',
+    githubLink: 'https://github.com/username/ecommerce-website',
+    liveLink: 'https://ecommerce-website.example.com',
+  },
+  {
+    id: 2,
+    name: 'AutoHub Landing',
+    category: 'react',
+    img: AutoHubImg,
+    tools: ['React'],
+    description: 'A responsive landing page for AutoHub, showcasing features and services with smooth scrolling animations.',
+    githubLink: 'https://github.com/mohammedmelalimy/AutoHub.git',
+    liveLink: 'https://auto-hub-tawny.vercel.app/',
+  },
+  {
+    id: 3,
+    name: 'Crypto Price',
+    category: 'react',
+    img: BlogsImg,
+    tools: ['React'],
+    description: 'A real-time cryptocurrency price tracker using React and external APIs.',
+    githubLink: 'https://github.com/username/crypto-price',
+    liveLink: 'https://crypto-price.example.com',
+  },
+  {
+    id: 4,
+    name: 'Electronic Ecommerce',
+    category: 'react',
+    img: ElectronicsImg,
+    tools: ['React', 'Tailwind', 'Redux Toolkit'],
+    description: 'An electronics e-commerce website with dynamic product listing and Redux-powered cart functionality.',
+    githubLink: 'https://github.com/mohammedmelalimy/ecommerce.git',
+    liveLink: 'https://ecommerce-eta-seven-16.vercel.app/',
+  },
+  {
+    id: 5,
+    name: 'Leon Template',
+    category: 'html-css',
+    img: LeonImg,
+    tools: ['HTML', 'CSS'],
+    description: 'A clean and responsive HTML/CSS template for a personal or corporate website.',
+    githubLink: 'https://github.com/mohammedmelalimy/Template1.git',
+    liveLink: 'https://template1-three-tau.vercel.app/',
+  },
+  {
+    id: 6,
+    name: 'Ps Store',
+    category: 'html-css',
+    img: PSImg,
+    tools: ['HTML', 'CSS'],
+    description: 'An online store template showcasing products with clean design and responsive layout.',
+    githubLink: 'https://github.com/mohammedmelalimy/Ps-STore-Template-.git',
+    liveLink: 'https://ps-s-tore-template.vercel.app/',
+  },
+  {
+    id: 7,
+    name: 'Watches Ecommerce',
+    category: 'js',
+    img: WatchesImg,
+    tools: ['HTML', 'CSS', 'JavaScript'],
+    description: 'A dynamic watch store template with interactive UI built using HTML, CSS, and JavaScript.',
+    githubLink: 'https://github.com/mohammedmelalimy/responsive-Watches-Website.git',
+    liveLink: 'https://responsive-watches-website-mu.vercel.app/',
+  },
+];
+
+export default projects;
+

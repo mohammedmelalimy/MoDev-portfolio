@@ -1,4 +1,4 @@
-/* ---------- About Section ---------- */
+/* ================== About Section ================== */
 .about {
     display: flex;
     flex-direction: column;
@@ -8,12 +8,13 @@
     margin: 80px 170px;
 }
 
+/* ---------- Title ---------- */
 .title-box {
     position: relative;
 }
 
 .title-box h1 {
-    padding: 0px 30px;
+    padding: 0 30px;
     font-size: 60px;
     font-weight: 600;
 }
@@ -25,25 +26,28 @@
     z-index: -1;
 }
 
-/* ---------- Desktop: image on left, text on right ---------- */
+/* ---------- About Sections ---------- */
 .about-sections {
     display: flex;
     align-items: center;
     gap: 70px;
 }
 
+/* Left Image */
 .about-left img {
     width: 390px;
     border-radius: 30px;
 }
 
+/* Right Text */
 .about-right {
     display: flex;
     flex-direction: column;
     gap: 0px;
-    flex: 1; 
+    flex: 1;
 }
 
+/* Paragraphs */
 .about-para {
     display: flex;
     flex-direction: column;
@@ -61,6 +65,7 @@
     font-weight: 800;
 }
 
+/* Skills Part */
 .skills-part {
     display: flex;
     flex-wrap: wrap;
@@ -70,44 +75,37 @@
     border: 2px solid rgba(226, 171, 213, 0.093);
     padding: 20px;
     border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    transition: 0.3s;
 }
-.skills-part:hover{
-        border: 2px solid rgba(196, 79, 169, 0.305);
 
+.skills-part:hover {
+    border: 2px solid rgba(196, 79, 169, 0.305);
 }
-.skill{
+
+.skill {
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
 }
-.skill:hover{
+
+.skill:hover {
     transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
 }
+
 .skill:hover svg {
     fill: rgb(239, 107, 223);
 }
-/* ---------- Responsive: Tablet ---------- */
+
+/* ================== Responsive ================== */
+
+/* -------- Tablet (<=1024px) -------- */
 @media (max-width: 1024px) {
     .about {
-        margin: 50px 50px;
-        gap: 60px;
+        margin: 50px 6%;
+        gap: 50px;
     }
-    .about-left {
-        display: none;
-    }
+
     .title-box h1 {
         font-size: 50px;
     }
@@ -116,17 +114,32 @@
         width: 150px;
     }
 
+    /* Layout column بدل row */
     .about-sections {
-        gap: 50px;
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+    }
+
+    .about-left {
+        display: none;
+    }
+
+    .about-right {
+        width: 100%;
     }
 
     .about-para {
-        font-size: 20px;
-        line-height: 36px;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .skills-part {
+        gap: 20px;
     }
 }
 
-/* ---------- Responsive: Mobile ---------- */
+/* -------- Mobile (<=768px) -------- */
 @media (max-width: 768px) {
     .about {
         gap: 25px;
@@ -144,30 +157,13 @@
         right: -20px;
     }
 
-    .about-sections {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .about-left {
-        display: none; 
-    }
-
-    .about-right {
-        width: 100%;
-    }
-
     .about-para {
         font-size: 17px;
         line-height: 32px;
     }
-
-    .skills-part {
-        gap: 30px;
-    }
 }
 
-/* ---------- Extra Small Screens ---------- */
+/* -------- Extra Small Screens (<=480px) -------- */
 @media (max-width: 480px) {
     .title-box h1 {
         font-size: 32px;
@@ -179,6 +175,6 @@
     }
 
     .skills-part {
-        gap: 49px;
+        gap: 15px;
     }
 }

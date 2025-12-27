@@ -1,0 +1,113 @@
+/* ---------- Card Container ---------- */
+.project-card {
+  background-color: #1e1e1e; /* dark panel */
+  color: #eee;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+}
+
+/* Hover effect */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* ---------- Project Image ---------- */
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ---------- Project Name ---------- */
+.project-card h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* ---------- Description ---------- */
+.project-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ccc;
+  margin: 0;
+}
+
+/* ---------- Tools / Tags ---------- */
+.project-card .tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.project-card .tools span {
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+/* ---------- Links ---------- */
+.project-card .links {
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+}
+
+.project-card .links a {
+  text-decoration: none;
+  color: #DA7C25;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.project-card .links a:hover {
+  color: #B923E1;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .project-card img {
+    height: 180px;
+  }
+  .project-card h2 {
+    font-size: 20px;
+  }
+  .project-card p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card img {
+    height: 160px;
+  }
+  .project-card h2 {
+    font-size: 18px;
+  }
+  .project-card p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card img {
+    height: 140px;
+  }
+  .project-card h2 {
+    font-size: 16px;
+  }
+  .project-card p {
+    font-size: 11px;
+  }
+}
