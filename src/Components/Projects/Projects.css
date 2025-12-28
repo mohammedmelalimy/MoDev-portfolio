@@ -86,8 +86,7 @@
     border-radius: 50px;
     background-color: #171717;
     color: #ffffff;
-    outline: none;
-    border: none;
+    border: 1px solid #d265c3;
 }
 
 .show-more-projects:hover {
