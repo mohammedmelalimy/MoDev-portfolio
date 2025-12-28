@@ -152,7 +152,7 @@
 
   .side button {
     text-align: center;
-    padding: 8px 10px;
+    padding: 8px 9px;
     font-size: 14px;
   }
 }
@@ -165,10 +165,13 @@
 
   .side button {
     font-size: 12px;
-    padding: 6px 8px;
+    padding: 6px 7px;
   }
 
   .projects-card {
     gap: 12px;
+  }
+  .show-more-projects{
+    margin: auto;
   }
 }
