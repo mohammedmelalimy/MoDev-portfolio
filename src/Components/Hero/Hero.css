@@ -10,13 +10,13 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 35px;
+    gap: 30px;
     padding: 0 20px;
 }
 
 .hero h1 {
     text-align: center;
-    font-size: 60px;
+    font-size: 65px;
     width: 65%;
     font-weight: 600;
     line-height: 70px;
@@ -30,10 +30,10 @@
 }
 
 .hero h1 .typed {
-    font-size: 50px;
+    font-size: 55px;
     color: #fff;
     display: inline-block;
-    min-width: 300px; /* يمنع تحريك العناصر أثناء الكتابة */
+    min-width: 300px; 
 }
 
 .hero p {
