@@ -1,10 +1,10 @@
-import React, { useRef } from 'react'
-import './Navbar.css'
-import logo from '../../assets/logo.svg'
-import underlined from '../../assets/underlined.svg'
-import toggle from '../../assets/toggle.svg'
-import closed from '../../assets/closed.svg'
+import { useRef } from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import closed from '../../assets/closed.svg'
+import logo from '../../assets/logo.svg'
+import toggle from '../../assets/toggle.svg'
+import underlined from '../../assets/underlined.svg'
+import './Navbar.css'
 
 const Navbar = ({ activeSection, setActiveSection }) => {
     const menuRef = useRef();
@@ -43,7 +43,7 @@ const Navbar = ({ activeSection, setActiveSection }) => {
                 </li>
 
                 <li>
-                    <AnchorLink className='anchor-link' offset={50} href='#work' data-to-scrollspy-id="work">
+                    <AnchorLink className='anchor-link' offset={50} href='#projects' data-to-scrollspy-id="work">
                         <p onClick={() => { setActiveSection('work'); closeMenu(); }}>Projects</p>
                     </AnchorLink>
                     {activeSection === 'work' && <img src={underlined} alt="" />}
