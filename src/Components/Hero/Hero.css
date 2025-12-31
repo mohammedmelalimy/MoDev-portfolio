@@ -129,7 +129,7 @@
 /* ---------- Extra Small Screens ---------- */
 @media (max-width: 480px) {
 
-    .img-hero { width: 150px; margin-top: 75px; } 
+    .img-hero { width: 180px; margin-top: 65px; } 
 
     .hero h1 {
         font-size: 28px;    
@@ -160,6 +160,6 @@
 
     .hero-action .hero-resume,
     .hero-action .hero-connect {
-        width: 80%; /* مناسب للموبايل */
+        width: 80%;
     }
 }
