@@ -32,7 +32,7 @@
 .hero h1 .typed {
     font-size: 60px;
     color: #fff;
-    display: block;
+    display: inline-block;
     min-width: 300px;
     font-weight: 500;
 }
@@ -138,14 +138,16 @@
     }
 
     .hero h1 .fixed {
-        font-size: 25px;
+        font-size: 23px;
         line-height: 32px;
         margin-top: 20px;
+        font-weight: 700;
     }
 
     .hero h1 .typed {
-        font-size: 17px;
+        font-size: 25px;
         min-width: unset;
+        font-weight: 500;
     }
 
     .hero p {

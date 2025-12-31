@@ -8,13 +8,14 @@ const Hero = () => {
             <div className='hero' id='home'>
                 <img src={hero_img} alt='profile image' className='img-hero'/>
                 <h1>
-                  <span className='fixed'>I'm Mohammed Elalimy | </span>
+                  <span className='fixed'>Hi , I'm Mohammed Elalimy | </span><br/>
                   <ReactTyped
                     className="typed"
-                    strings={[" Frontend Developer based in Tanta"]}
-                    typeSpeed={120}
-                    backSpeed={50}
+                    strings={[" Frontend Developer","MERN Stack Developer", "React Developer"]}
+                    typeSpeed={160}
+                    backSpeed={130}
                     showCursor={true}
+                    loop
                   />
                 </h1>
                 <p>Eager to learn new technologies and contribute to real-world projects. </p>
