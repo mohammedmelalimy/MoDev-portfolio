@@ -1,19 +1,19 @@
 /* ---------- Hero Section ---------- */
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 20px;
+}
+
 .img-hero {
     width: 240px;         
     border-radius: 50%;   
     object-fit: cover; 
     margin-top: 30px;   
 }
-
-.hero {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-    padding: 0 20px;
-}
-
 .hero h1 {
     text-align: center;
     font-size: 55px;
@@ -30,7 +30,7 @@
 }
 
 .hero h1 .typed {
-    font-size: 60px;
+    font-size: 50px;
     color: #fff;
     display: inline-block;
     min-width: 300px;
