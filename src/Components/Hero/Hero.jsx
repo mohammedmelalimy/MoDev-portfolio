@@ -15,8 +15,7 @@ const Hero = () => {
                     typeSpeed={200}
                     backSpeed={100}
                     showCursor={true}
-                    startWhenVisible
-                    // loop
+                    loop
                   />
                 </h1>
                 <p>Eager to learn new technologies and contribute to real-world projects. </p>
