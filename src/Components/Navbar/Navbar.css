@@ -50,6 +50,7 @@
 .nav-connect:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2); 
+    background: linear-gradient(rgb(156, 69, 196) 100%);
 }
 
 .nav-menu li {

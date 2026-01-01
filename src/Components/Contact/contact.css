@@ -118,6 +118,7 @@
 
 .contact-submit:hover{
     transform: scale(1.08);
+    background: linear-gradient(rgb(156, 69, 196) 100%);
 }
 
 /* ---------- Tablet ---------- */

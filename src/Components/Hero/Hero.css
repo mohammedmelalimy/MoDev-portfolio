@@ -31,7 +31,7 @@
 
 .hero h1 .typed {
     font-size: 50px;
-    color: #fff;
+    color: #f8f8f8be;
     display: inline-block;
     min-width: 300px;
     font-weight: 500;
@@ -66,6 +66,7 @@
 .hero-action .hero-connect:hover {
     transform: scale(1.05);
     border: 2px solid rgb(255, 255, 255);
+    background: linear-gradient(rgb(156, 69, 196) 100%);
 }
 
 .hero-action .hero-resume {

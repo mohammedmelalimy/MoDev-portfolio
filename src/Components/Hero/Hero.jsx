@@ -12,10 +12,11 @@ const Hero = () => {
                   <ReactTyped
                     className="typed"
                     strings={[" Frontend Developer","MERN Stack Developer", "React Developer"]}
-                    typeSpeed={160}
-                    backSpeed={130}
+                    typeSpeed={200}
+                    backSpeed={100}
                     showCursor={true}
-                    loop
+                    startWhenVisible
+                    // loop
                   />
                 </h1>
                 <p>Eager to learn new technologies and contribute to real-world projects. </p>
