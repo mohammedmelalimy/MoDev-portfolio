@@ -4,9 +4,9 @@ import BlogsImg from '../Data/Blogs.jpg';
 import ElectronicsImg from '../Data/Electronics.jpg';
 import FreshCartImg from '../Data/FreshCart.jpg';
 import LeonImg from '../Data/Leon.jpg';
+import Market from "../Data/Market.jpg";
 import PSImg from '../Data/PS.jpg';
 import WatchesImg from '../Data/Watches.jpg';
-
 const projects = [
   {
     id: 1,
@@ -30,13 +30,13 @@ const projects = [
   },
   {
     id: 3,
-    name: 'Crypto Price',
+    name: 'Our Market Website',
     category: 'react',
-    img: BlogsImg,
+    img: Market,
     tools: ['React'],
     description: 'A real-time cryptocurrency price tracker using React and external APIs.',
-    githubLink: 'https://github.com/username/crypto-price',
-    liveLink: 'https://crypto-price.example.com',
+    githubLink: 'https://github.com/mohammedmelalimy/Our-Market-Website',
+    liveLink: 'https://our-market-website.vercel.app/',
   },
   {
     id: 4,
