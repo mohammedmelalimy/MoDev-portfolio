@@ -4,8 +4,8 @@ import BlogsImg from '../Data/Blogs.jpg';
 import ElectronicsImg from '../Data/Electronics.jpg';
 import FreshCartImg from '../Data/FreshCart.jpg';
 import LeonImg from '../Data/Leon.jpg';
-import Market from "../Data/Market.jpg";
 import PSImg from '../Data/PS.jpg';
+import Snack from "../Data/snackzone.jpg";
 import WatchesImg from '../Data/Watches.jpg';
 const projects = [
   {
@@ -30,9 +30,9 @@ const projects = [
   },
   {
     id: 3,
-    name: 'Our Market Website',
+    name: 'SnackZone Website',
     category: 'react',
-    img: Market,
+    img: Snack,
     tools: ['React'],
     description: 'A real-time cryptocurrency price tracker using React and external APIs.',
     githubLink: 'https://github.com/mohammedmelalimy/Our-Market-Website',
