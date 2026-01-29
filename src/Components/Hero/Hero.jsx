@@ -24,7 +24,7 @@ const Hero = () => {
                         Contact with me
                     </AnchorLink>
                     <a
-                        href="/public/cv.pdf"
+                        href="/public/CV.pdf"
                         download="cv.pdf"
                         className="hero-resume"
                         >My Resume</a>
