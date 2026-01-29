@@ -1,6 +1,7 @@
 
 import AutoHubImg from '../Data/Auto Hub.jpg';
 import BlogsImg from '../Data/Blogs.jpg';
+import CartifyImg from '../Data/cartify-orpin.jpg';
 import ElectronicsImg from '../Data/Electronics.jpg';
 import FreshCartImg from '../Data/FreshCart.jpg';
 import LeonImg from '../Data/Leon.jpg';
@@ -97,6 +98,16 @@ const projects = [
     description: 'A clean and responsive HTML/CSS template for a personal or corporate website.',
     githubLink: 'https://github.com/mohammedmelalimy/Template1.git',
     liveLink: 'https://template1-three-tau.vercel.app/',
+  },
+  {
+    id: 10,
+    name: 'Cartify',
+    category: 'react',
+    img: CartifyImg,
+    tools: ['React', 'Tailwind CSS', 'Redux Toolkit'],
+    description: 'A modern e-commerce platform with dynamic product listings and state management using Redux Toolkit.',
+    githubLink: 'https://github.com/mohammedmelalimy/Cartify',
+    liveLink: 'https://cartify-orpin.vercel.app/',
   },
 ];
 
