@@ -1,9 +1,9 @@
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import {ReactTyped} from 'react-typed';
-import hero_img from '../../assets/profile.png';
-import './Hero.css';
 import { Skeleton } from '@mui/material';
 import { useState } from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { ReactTyped } from 'react-typed';
+import hero_img from '../../assets/profile.png';
+import './Hero.css';
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -20,7 +20,7 @@ const Hero = () => {
       />
 
       {/* Skeleton shows only while image is loading */}
-      {!isLoaded && <Skeleton variant="rectangular" width={210} height={118} />}
+      {!isLoaded && <Skeleton variant="circular" height={240} className='img-hero' style={{backgroundColor:'#dddddd4f'}}/>}
 
       {/* Hero text */}
       <h1>

@@ -11,7 +11,7 @@
     z-index: 1000;
     padding: 10px;
     border-bottom: 2px solid #ffffff33;
-    box-shadow: 0 12px 12px rgba(131, 88, 143, 0.3);
+    box-shadow: 0 8px 12px rgba(131, 88, 143, 0.3);
 }
 .logo {
     display: flex;
