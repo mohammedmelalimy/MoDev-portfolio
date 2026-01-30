@@ -4,6 +4,14 @@
     align-items: center;
     justify-content: space-between;
     margin: 20px 170px;
+    background-color: #383738d4;
+    border-radius: 23px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px;
+    border-bottom: 2px solid #ffffff33;
+    box-shadow: 0 15px 12px rgba(131, 88, 143, 0.3);
 }
 .logo {
     display: flex;
