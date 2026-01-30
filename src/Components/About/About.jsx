@@ -1,9 +1,8 @@
-import React from 'react'
-import './About.css'
-import theme from '../../assets/theme.svg'
-import left from "../../assets/Hero.png"
-import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare, FaNode, FaBootstrap } from 'react-icons/fa';
-import { SiRedux, SiTailwindcss, SiMongodb, SiExpress } from 'react-icons/si';
+import { FaBootstrap, FaCss3Alt, FaHtml5, FaJsSquare, FaNode, FaReact } from 'react-icons/fa';
+import { SiExpress, SiMongodb, SiRedux, SiTailwindcss } from 'react-icons/si';
+import left from "../../assets/Hero.png";
+import theme from '../../assets/theme.svg';
+import './About.css';
 
 const About = () => {
     return (
@@ -12,7 +11,6 @@ const About = () => {
                 <h1>About Me</h1>
                 <img src={theme} alt="title underline" />
             </div>
-
             <div className="about-sections">
                 <div className="about-left">
                     <img src={left} alt="profile" />

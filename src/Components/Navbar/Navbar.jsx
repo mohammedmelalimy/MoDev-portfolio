@@ -1,68 +1,73 @@
-import { useRef } from 'react'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
-import closed from '../../assets/closed.svg'
-import logo from '../../assets/logo.svg'
-import toggle from '../../assets/toggle.svg'
-import underlined from '../../assets/underlined.svg'
-import './Navbar.css'
+import { useRef } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import closed from '../../assets/closed.svg';
+import logo from '../../assets/logo.svg';
+import toggle from '../../assets/toggle.svg';
+import underlined from '../../assets/underlined.svg';
+import './Navbar.css';
 
-const Navbar = ({ activeSection, setActiveSection }) => {
+const Navbar = () => {
     const menuRef = useRef();
+    const location = useLocation();
 
     const openMenu = () => {
-        menuRef.current.style.right = "0"; 
+        menuRef.current.style.right = "0";
     };
 
     const closeMenu = () => {
-        menuRef.current.style.right = "-500px"; 
+        menuRef.current.style.right = "-500px";
     };
+
+    // 🌟 Determine active nav item based on route path
+    const currentPath = location.pathname; 
 
     return (
         <div className="navbar">
-            <div className='logo'>
+
+            <Link to="/" className="logo" onClick={closeMenu}>
                 <img src={logo} alt="logo" />
                 <p>Elalimy</p>
-            </div>
-            <img src={toggle} alt="toggle" className='nav-mob-open' onClick={openMenu} />
+            </Link>
+
+            <img src={toggle} alt="toggle" className="nav-mob-open" onClick={openMenu} />
 
             <ul ref={menuRef} className="nav-menu">
-                <img src={closed} alt='closed' className='nav-mob-closed' onClick={closeMenu}/>
-                
+                <img src={closed} alt="closed" className="nav-mob-closed" onClick={closeMenu} />
+
                 <li>
-                    <AnchorLink className="anchor-link" offset={50} href='' data-to-scrollspy-id="home">
-                        <p onClick={() => { setActiveSection('home'); closeMenu(); }}>Menu</p>
-                    </AnchorLink>
-                    {activeSection === 'home' && <img src={underlined} alt="" />}
+                    <Link to="/" onClick={closeMenu}>
+                        <p>Menu</p>
+                    </Link>
+                    {currentPath === '/' && <img src={underlined} alt="active" />}
                 </li>
 
                 <li>
-                    <AnchorLink className='anchor-link' offset={50} href='#about' data-to-scrollspy-id="about">
-                        <p onClick={() => { setActiveSection('about'); closeMenu(); }}>About Me</p>
-                    </AnchorLink>
-                    {activeSection === 'about' && <img src={underlined} alt="" />}
+                    <Link to="/about" onClick={closeMenu}>
+                        <p>About Me</p>
+                    </Link>
+                    {currentPath === '/about' && <img src={underlined} alt="active" />}
                 </li>
 
                 <li>
-                    <AnchorLink className='anchor-link' offset={50} href='#projects' data-to-scrollspy-id="work">
-                        <p onClick={() => { setActiveSection('work'); closeMenu(); }}>Projects</p>
-                    </AnchorLink>
-                    {activeSection === 'work' && <img src={underlined} alt="" />}
+                    <Link to="/projects" onClick={closeMenu}>
+                        <p>Projects</p>
+                    </Link>
+                    {currentPath === '/projects' && <img src={underlined} alt="active" />}
                 </li>
 
                 <li>
-                    <AnchorLink className='anchor-link' offset={50} href='#contact' data-to-scrollspy-id="contact">
-                        <p onClick={() => { setActiveSection('contact'); closeMenu(); }}>Contact</p>
-                    </AnchorLink>
-                    {activeSection === 'contact' && <img src={underlined} alt="" />}
+                    <Link to="/contact" onClick={closeMenu}>
+                        <p>Contact</p>
+                    </Link>
+                    {currentPath === '/contact' && <img src={underlined} alt="active" />}
                 </li>
             </ul>
 
-            <AnchorLink className='nav-connect' offset={50} href='#contact'>
-                <p onClick={() => setActiveSection('contact')}>Connect With Me</p>
-            </AnchorLink>
+            <Link to="/contact" className="nav-connect" onClick={closeMenu}>
+                <p>Connect With Me</p>
+            </Link>
         </div>
     );
 };
 
 export default Navbar;
-

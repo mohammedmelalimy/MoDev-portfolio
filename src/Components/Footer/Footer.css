@@ -1,6 +1,6 @@
 /* ---------- Footer Section ---------- */
 .footer {
-    margin: 0px 120px; 
+    margin: 20px 120px; 
     display: flex;
     flex-direction: column;
     gap: 10px;
