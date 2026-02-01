@@ -1,4 +1,7 @@
 /* ---------- Footer Section ---------- */
+.container{
+  background-color: rgba(42, 42, 42, 0.893);
+}
 .footer {
     margin: 20px 120px; 
     display: flex;
