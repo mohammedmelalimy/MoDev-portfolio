@@ -26,7 +26,20 @@
   display: flex;
   gap: 50px;
 }
-
+.footer-top-right a{
+  color: #ffffff;
+  font-size: 15px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s, color 0.3s;
+}
+.footer-top-right a:hover {
+  color: rgb(240, 136, 221);
+  transform: translateY(-3px);
+}
 .footer-top-right i {
   font-size: 22px;
   color: #ffffff;
@@ -91,6 +104,9 @@
 
     .footer-top-right {
         gap: 50px;
+    }
+    .footer-top-right a span{
+      display: none;
     }
 
 }
