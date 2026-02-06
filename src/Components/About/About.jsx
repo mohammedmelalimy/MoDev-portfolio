@@ -1,5 +1,5 @@
 import { FaBootstrap, FaCss3Alt, FaHtml5, FaJsSquare, FaNode, FaReact } from 'react-icons/fa';
-import { SiExpress, SiMongodb, SiRedux, SiTailwindcss } from 'react-icons/si';
+import { SiExpress, SiMongodb, SiNestjs, SiNextdotjs, SiRedux, SiTailwindcss, SiTypescript } from 'react-icons/si';
 import left from "../../assets/Hero.png";
 import theme from '../../assets/theme.svg';
 import './About.css';
@@ -40,7 +40,9 @@ const About = () => {
                         <div className="skill"><FaBootstrap size={40} /><span>Bootstrap</span></div>
                         <div className="skill"><SiTailwindcss size={40} /><span>Tailwind</span></div>
                         <div className="skill"><SiRedux size={40} /><span>Redux</span></div>
-                        <div className="skill"><SiRedux size={40} /><span>Redux</span></div>
+                        <div className="skill"><SiNextdotjs size={40} /><span>Next Js</span></div>
+                        <div className="skill"><SiTypescript size={40} /><span>TypeScript</span></div>
+                        <div className="skill"><SiNestjs size={40} /><span>Nest Js</span></div>
                     </div>
                 </div>
             </div>

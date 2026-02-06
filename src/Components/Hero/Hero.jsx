@@ -1,6 +1,6 @@
 import { Skeleton } from '@mui/material';
 import { useState } from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { Link } from 'react-router-dom';
 import { ReactTyped } from 'react-typed';
 import hero_img from '../../assets/profile.png';
 import './Hero.css';
@@ -38,9 +38,9 @@ const Hero = () => {
       <p>Eager to learn new technologies and contribute to real-world projects.</p>
 
       <div className="hero-action">
-        <AnchorLink className='hero-connect' offset={50} href='#contact'>
+        <Link className='hero-connect' offset={50} to='/contact'>
           Contact with me
-        </AnchorLink>
+        </Link>
 
         <a
           href="/CV.pdf"
