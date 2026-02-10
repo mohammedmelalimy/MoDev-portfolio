@@ -2,6 +2,7 @@
 import AutoHubImg from '../Data/Auto Hub.jpg';
 import BlogsImg from '../Data/Blogs.jpg';
 import CartifyImg from '../Data/cartify-orpin.jpg';
+import contact from '../Data/contact.jpg';
 import ElectronicsImg from '../Data/Electronics.jpg';
 import FreshCartImg from '../Data/FreshCart.jpg';
 import LeonImg from '../Data/Leon.jpg';
@@ -109,6 +110,16 @@ const projects = [
     githubLink: 'https://github.com/mohammedmelalimy/ecommerce.git',
     liveLink: 'https://ecommerce-eta-seven-16.vercel.app/',
   },
+  {
+    id: 11,
+    name: 'Contact App',
+    category: 'react',
+    img: contact,
+    tools: ['React','css'],
+    description: 'A simple React contact manager app to add, delete, and search contacts by name.',
+    githubLink: 'https://github.com/mohammedmelalimy/Contact-App',
+    liveLink: 'https://contact-app-sigma-virid.vercel.app/',
+  }
 ];
 
 export default projects;
