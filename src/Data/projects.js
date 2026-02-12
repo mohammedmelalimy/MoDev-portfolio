@@ -8,6 +8,7 @@ import FreshCartImg from '../Data/FreshCart.jpg';
 import LeonImg from '../Data/Leon.jpg';
 import PSImg from '../Data/PS.jpg';
 import Snack from "../Data/snackzone.jpg";
+import ToDo from '../Data/ToDo.jpg';
 import WatchesImg from '../Data/Watches.jpg';
 const projects = [
   {
@@ -119,6 +120,16 @@ const projects = [
     description: 'A simple React contact manager app to add, delete, and search contacts by name.',
     githubLink: 'https://github.com/mohammedmelalimy/Contact-App',
     liveLink: 'https://contact-app-sigma-virid.vercel.app/',
+  },
+  {
+    id: 12,
+    name: 'To-Do App',
+    category: 'js',
+    img: ToDo,
+    tools: ['Html','css','Js'],
+    description: 'A simple Js To Do App to manage your progress in tasks to add, delete.',
+    githubLink: 'https://github.com/mohammedmelalimy/To-Do-List',
+    liveLink: 'https://https://to-do-list-beta-henna-71.vercel.app/-app-sigma-virid.vercel.app/',
   }
 ];
 
