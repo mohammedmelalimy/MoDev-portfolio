@@ -8,44 +8,66 @@ const Projects = () => {
   const [activeIndex, setActiveIndex] = useState('all');
   const [showAll, setShowAll] = useState(false);
 
-  const filteredProjects = activeIndex === 'all'
-    ? ProjectsDetails
-    : ProjectsDetails.filter(project => project.category === activeIndex);
+  const filteredProjects =
+    activeIndex === 'all'
+      ? ProjectsDetails
+      : ProjectsDetails.filter((project) => project.category === activeIndex);
 
   // Projects to show (first 3 unless showAll true)
   const displayedProjects = showAll ? filteredProjects : filteredProjects.slice(0, 3);
 
   return (
-    <div className='projects-section' id='projects'>
+    <div className="projects-section" id="projects">
       <div className="title">
         <h1>My Latest Work</h1>
-        <img src={theme} alt='theme'/>
+        <img src={theme} alt="theme" />
       </div>
-      <div className='projects-container'>
+      <div className="projects-container">
         <div className="side">
-          <button 
-              className={activeIndex === 'all' ? 'active' : ''} 
-              onClick={() => {setActiveIndex('all'); setShowAll(false);}}
+          <button
+            className={activeIndex === 'all' ? 'active' : ''}
+            onClick={() => {
+              setActiveIndex('all');
+              setShowAll(false);
+            }}
           >
-              All Projects
+            All Projects
           </button>
-          <button 
-              className={activeIndex === 'html-css' ? 'active' : ''} 
-              onClick={() => {setActiveIndex('html-css'); setShowAll(false);}}
+          <button
+            className={activeIndex === 'html-css' ? 'active' : ''}
+            onClick={() => {
+              setActiveIndex('html-css');
+              setShowAll(false);
+            }}
           >
             Html & CSS
           </button>
-          <button 
-              className={activeIndex === 'js' ? 'active' : ''} 
-              onClick={() => {setActiveIndex('js'); setShowAll(false);}}
+          <button
+            className={activeIndex === 'js' ? 'active' : ''}
+            onClick={() => {
+              setActiveIndex('js');
+              setShowAll(false);
+            }}
           >
-              JavaScript
+            JavaScript
           </button>
-          <button 
-              className={activeIndex === 'react' ? 'active' : ''} 
-              onClick={() => {setActiveIndex('react'); setShowAll(false);}}
+          <button
+            className={activeIndex === 'react' ? 'active' : ''}
+            onClick={() => {
+              setActiveIndex('react');
+              setShowAll(false);
+            }}
           >
-              React Js
+            React Js
+          </button>
+          <button
+            className={activeIndex === 'next' ? 'active' : ''}
+            onClick={() => {
+              setActiveIndex('next');
+              setShowAll(false);
+            }}
+          >
+            Next Js
           </button>
         </div>
 
@@ -55,15 +77,12 @@ const Projects = () => {
           ))}
         </div>
       </div>
-        {filteredProjects.length > 3 && (
-          <button 
-            className="show-more-projects"
-            onClick={() => setShowAll(!showAll)}
-          >
-            {showAll ? 'Show Less' : 'Show More'}
-            <img src={arrow}/>
-          </button>
-        )}
+      {filteredProjects.length > 3 && (
+        <button className="show-more-projects" onClick={() => setShowAll(!showAll)}>
+          {showAll ? 'Show Less' : 'Show More'}
+          <img src={arrow} />
+        </button>
+      )}
     </div>
   );
 };
