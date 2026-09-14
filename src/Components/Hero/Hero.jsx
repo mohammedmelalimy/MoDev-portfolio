@@ -10,17 +10,7 @@ const Hero = () => {
 
   return (
     <div className='hero' id='home'>
-      {/* Hero image */}
-      {/* <img 
-        src={hero_img} 
-        alt='profile image' 
-        className='img-hero' 
-        style={{ display: isLoaded ? 'block' : 'none' }}
-        onLoad={() => setIsLoaded(true)}
-      />
-
-      {/* Skeleton shows only while image is loading */}
-      {!isLoaded && <Skeleton variant="circular" height={240} className='img-hero' style={{backgroundColor:'#dddddd4f'}}/>} */}
+  
 
       {/* Hero text */}
       <h1>
