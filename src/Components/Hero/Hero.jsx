@@ -1,47 +1,76 @@
-import { Skeleton } from '@mui/material';
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ReactTyped } from 'react-typed';
-import hero_img from '../../assets/profile.png';
 import './Hero.css';
 
 const Hero = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
-
   return (
-    <div className='hero' id='home'>
-  
+    <section className="hero" id="home">
+      <div className="hero-content">
 
-      {/* Hero text */}
-      <h1>
-        <span className='fixed'>Hi , I'm Mohammed Elalimy | </span><br/>
-        <ReactTyped
-          className="typed"
-          strings={[" Frontend Developer","MERN Stack Developer", "React Developer"]}
-          typeSpeed={200}
-          backSpeed={100}
-          showCursor={true}
-          loop
-        />
-      </h1>
+        <div className="hero-badge">
+          <span className="hero-badge-dot" />
+          Available for Software Engineering Opportunities
+        </div>
 
-      <p>Eager to learn new technologies and contribute to real-world projects.</p>
+        <h1 className="hero-title">
+          Hi, I'm{' '}
+          <span className="hero-name">
+            Mohammed Elalimy
+          </span>
+        </h1>
 
-      <div className="hero-action">
-        <Link className='hero-connect' offset={50} to='/contact'>
-          Contact with me
-        </Link>
+        <div className="hero-role">
+          <ReactTyped
+            strings={[
+              'Software Engineer',
+              'Full-Stack MERN Developer',
+              'React & Next.js Developer'
+            ]}
+            typeSpeed={65}
+            backSpeed={35}
+            backDelay={1400}
+            loop
+            showCursor
+            cursorChar="|"
+          />
+        </div>
 
-        <a
-          href="/CV.pdf"
-          download="cv.pdf"
-          className="hero-resume"
-        >
-          My Resume
-        </a>
+        <p className="hero-description">
+          I build scalable, responsive, and user-focused web applications
+          using modern JavaScript technologies, with experience across
+          frontend, backend, APIs, and production e-commerce platforms.
+        </p>
+
+        <div className="hero-tech">
+          <span>React</span>
+          <span>Next.js</span>
+          <span>Node.js</span>
+          <span>Express</span>
+          <span>MongoDB</span>
+          <span>TypeScript</span>
+        </div>
+
+        <div className="hero-action">
+          <Link
+            className="hero-connect"
+            to="/contact"
+          >
+            Let's Connect
+            <span>→</span>
+          </Link>
+
+          <a
+            href="/CV.pdf"
+            download="Mohammed_Elalimy_CV.pdf"
+            className="hero-resume"
+          >
+            Download Resume
+          </a>
+        </div>
+
       </div>
-    </div>
+    </section>
   );
-}
+};
 
 export default Hero;
