@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div className='hero' id='home'>
       {/* Hero image */}
-      <img 
+      {/* <img 
         src={hero_img} 
         alt='profile image' 
         className='img-hero' 
@@ -20,7 +20,7 @@ const Hero = () => {
       />
 
       {/* Skeleton shows only while image is loading */}
-      {!isLoaded && <Skeleton variant="circular" height={240} className='img-hero' style={{backgroundColor:'#dddddd4f'}}/>}
+      {!isLoaded && <Skeleton variant="circular" height={240} className='img-hero' style={{backgroundColor:'#dddddd4f'}}/>} */}
 
       {/* Hero text */}
       <h1>
